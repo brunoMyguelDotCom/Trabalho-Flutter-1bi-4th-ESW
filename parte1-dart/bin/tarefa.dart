@@ -1,11 +1,8 @@
 class Tarefa {
   final String titulo;
   final int minutosEstimados;
-  
   final double prioridade;
   final DateTime criadaEm;
-
-
 
   Tarefa({
     required this.titulo,
