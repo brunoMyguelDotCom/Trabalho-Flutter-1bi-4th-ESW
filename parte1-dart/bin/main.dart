@@ -35,6 +35,22 @@ void main() {
     ],
   );
 
+  print('===== [1] ENTIDADE PRINCIPAL =====');
+  print(tarefa.ficha());
+
+  print('\n===== [2] HERANÇA =====');
+  print('Tarefa: ${tarefa.ficha()}');
+  print('Prioritária: ${tarefaPrioritaria.ficha()}');
+
+  print('\n===== [3] COMPOSIÇÃO =====');
+  print('Lista "${lista.nome}" contém ${lista.quantidade} tarefas:');
+  for (final item in lista.tarefas) {
+    print('- ${item.titulo}');
+  }
+
+  print('\n===== [4] ENCAPSULAMENTO =====');
+  print('Total de minutos: ${lista.totalMinutos}');
+
   lista.adicionar(
     Tarefa(
       titulo: 'Fazer exercícios',
@@ -43,4 +59,6 @@ void main() {
       criadaEm: agora,
     ),
   );
+
+  print('Após adicionar "Fazer exercícios": ${lista.totalMinutos}');
 }
