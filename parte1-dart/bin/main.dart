@@ -60,5 +60,6 @@ void main() {
     ),
   );
 
-  print('Após adicionar "Fazer exercícios": ${lista.totalMinutos}');
+  print('Após adicionar "Fazer exercícios": ${lista.totalMinutos} min');
+  print('\n\n -> HORAS TOTAIS: ${lista.totalMinutos / 60} h');
 }
