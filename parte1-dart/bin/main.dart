@@ -1,6 +1,6 @@
-import 'lista_tarefas.dart';
-import 'tarefa.dart';
-import 'tarefa_prioritaria.dart';
+import 'models/lista_tarefas.dart';
+import 'models/tarefa.dart';
+import 'models/tarefa_prioritaria.dart';
 
 void main() {
   final agora = DateTime.now();
