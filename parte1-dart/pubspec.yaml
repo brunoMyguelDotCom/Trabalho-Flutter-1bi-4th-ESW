@@ -1,0 +1,8 @@
+name: parte1_dart
+description: Parte 1 do trabalho bimestral - Gerenciador de Tarefas.
+version: 1.0.0
+environment:
+  sdk: ^3.0.0
+
+executables:
+  parte1_dart: main
