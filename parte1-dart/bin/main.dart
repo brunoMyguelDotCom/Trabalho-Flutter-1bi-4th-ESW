@@ -40,7 +40,7 @@ void main() {
 
   print('\n===== [2] HERANÇA =====');
   print('Tarefa: ${tarefa.ficha()}');
-  print('Prioritária: ${tarefaPrioritaria.ficha()}');
+  print('prioritaria: ${tarefaPrioritaria.ficha()}');
 
   print('\n===== [3] COMPOSIÇÃO =====');
   print('Lista "${lista.nome}" contém ${lista.quantidade} tarefas:');
