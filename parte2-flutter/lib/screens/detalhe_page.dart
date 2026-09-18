@@ -31,7 +31,7 @@ class DetalhePage extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineSmall,
             ),
             const SizedBox(height: 20),
-            Text('Minutos estimados: ${tarefa.minutosEstimados}'),
+            Text('Horas estimadas: ${(tarefa.minutosEstimados / 60).toStringAsFixed(2)}h'),
             Text('Prioridade: ${tarefa.prioridade}'),
             Text(
               'Criada em: ${tarefa.criadaEm.day.toString().padLeft(2, '0')}/${tarefa.criadaEm.month.toString().padLeft(2, '0')}/${tarefa.criadaEm.year}',

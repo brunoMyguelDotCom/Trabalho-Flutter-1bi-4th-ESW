@@ -49,7 +49,7 @@ void main() {
   }
 
   print('\n===== [4] ENCAPSULAMENTO =====');
-  print('Total de minutos: ${lista.totalMinutos}');
+  print('Total de horas: ${(lista.totalMinutos / 60).toStringAsFixed(2)}h');
 
   lista.adicionar(
     Tarefa(
@@ -60,6 +60,6 @@ void main() {
     ),
   );
 
-  print('Após adicionar "Fazer exercícios": ${lista.totalMinutos} min');
-  print('\n\n -> HORAS TOTAIS: ${lista.totalMinutos / 60} h');
+  print('Após adicionar "Fazer exercícios": ${(lista.totalMinutos / 60).toStringAsFixed(2)}h');
+  print('\n\n -> HORAS TOTAIS: ${(lista.totalMinutos / 60).toStringAsFixed(2)} h');
 }

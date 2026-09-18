@@ -30,21 +30,25 @@ class CartaoTarefa extends StatelessWidget {
           ),
         ],
       ),
-      child: ListTile(
-        onTap: onTap,
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 8,
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(14),
+        child: ListTile(
+          onTap: onTap,
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 8,
+          ),
+          leading: CircleAvatar(
+            child: Text(tarefa.prioridade.toStringAsFixed(0)),
+          ),
+          title: Text(
+            tarefa.titulo,
+            style: const TextStyle(fontWeight: FontWeight.w600),
+          ),
+          subtitle: Text('${(tarefa.minutosEstimados / 60).toStringAsFixed(2)}h estimados'),
+          trailing: const Icon(Icons.chevron_right),
         ),
-        leading: CircleAvatar(
-          child: Text(tarefa.prioridade.toStringAsFixed(0)),
-        ),
-        title: Text(
-          tarefa.titulo,
-          style: const TextStyle(fontWeight: FontWeight.w600),
-        ),
-        subtitle: Text('${tarefa.minutosEstimados} minutos estimados'),
-        trailing: const Icon(Icons.chevron_right),
       ),
     );
   }

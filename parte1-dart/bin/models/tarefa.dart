@@ -12,6 +12,6 @@ class Tarefa {
   });
 
   String ficha() {
-    return '$titulo | $minutosEstimados min | prioridade $prioridade | ${criadaEm.day.toString().padLeft(2, '0')}/${criadaEm.month.toString().padLeft(2, '0')}/${criadaEm.year}';
+    return '$titulo | ${(minutosEstimados / 60).toStringAsFixed(2)}h | prioridade $prioridade | ${criadaEm.day.toString().padLeft(2, '0')}/${criadaEm.month.toString().padLeft(2, '0')}/${criadaEm.year}';
   }
 }
